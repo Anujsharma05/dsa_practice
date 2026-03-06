@@ -6,6 +6,7 @@ public class FindMaxNum {
         int output = findMaxNum(arr, 0, Integer.MIN_VALUE);
         System.out.println(output);
     }
+
     static int findMaxNum(int[] arr, int i, int max) {
         if(arr.length==i) return max;
         if(arr[i] > max) {

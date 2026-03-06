@@ -8,4 +8,8 @@ public class CapitalizeFirstLetter {
         String[] sArr = s.split(" ");
         System.out.println(Arrays.toString(sArr));
     }
+
+    static String capitalized() {
+        return null;
+    }
 }

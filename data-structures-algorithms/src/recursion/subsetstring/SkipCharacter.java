@@ -5,18 +5,18 @@ public class SkipCharacter {
         char letter = 'a';
 
 //        String output = removeSpecifiedLetter(str, letter);
-        String output = singleArg(str, letter);
+        String output = singleFunc(str, letter);
         System.out.println(output);
     }
 
-    private static String singleArg(String str, char letter) {
+    private static String singleFunc(String str, char letter) {
 
         if(str.isEmpty()) return str;
 
         if(str.charAt(0) != letter) {
-            return str.charAt(0) + singleArg(str.substring(1), letter);
+            return str.charAt(0) + singleFunc(str.substring(1), letter);
         }
-        return singleArg(str.substring(1), letter);
+        return singleFunc(str.substring(1), letter);
     }
     private static String removeSpecifiedLetter(String str, char letter) {
         StringBuilder sb = new StringBuilder();
